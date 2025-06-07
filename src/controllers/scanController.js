@@ -1,5 +1,5 @@
 const tf = require("@tensorflow/tfjs-node");
-const pool = require("../utils/db");
+const pool = require("../config/db");
 const { v4: uuidv4 } = require("uuid");
 
 let model;

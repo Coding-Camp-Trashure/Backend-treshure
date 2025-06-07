@@ -1,4 +1,4 @@
-const pool = require("../utils/db");
+const pool = require("../config/db");
 
 exports.getScanHistory = async (req, res) => {
   try {

@@ -1,4 +1,4 @@
-const pool = require("../utils/db");
+const pool = require("../config/db");
 
 exports.getSaldo = async (req, res) => {
   try {

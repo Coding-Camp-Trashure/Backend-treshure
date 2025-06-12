@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 9000;
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://frontend-production-2db3.up.railway.app",
+    origin: "https://frontend-trashure-production.up.railway.app",
     credentials: true,
   })
 );

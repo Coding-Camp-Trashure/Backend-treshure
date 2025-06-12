@@ -4,6 +4,7 @@ const authRoutes = require("./routes/authRouter");
 const scanRoutes = require("./routes/scanRouter");
 const saldoRoutes = require("./routes/saldoRouter");
 const historyRoutes = require("./routes/historyRouter");
+const cors = require("cors");
 
 dotenv.config();
 
@@ -11,6 +12,12 @@ const app = express();
 const PORT = process.env.PORT || 9000;
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: "https://frontend-production-2db3.up.railway.app",
+    credentials: true,
+  })
+);
 
 app.use("/auth", authRoutes);
 app.use("/scan", scanRoutes);
